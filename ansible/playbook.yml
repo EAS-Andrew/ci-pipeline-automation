@@ -1,0 +1,13 @@
+---
+- hosts: jenkins
+  roles: 
+    - jenkins
+- hosts: sonar
+  roles: 
+    - sonar
+- hosts: nexus
+  roles: 
+    - nexus
+- hosts: trivy
+  roles: 
+    - trivy

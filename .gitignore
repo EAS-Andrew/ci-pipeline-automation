@@ -32,3 +32,10 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
+
+
+# project ignores
+packer/var_cento8.auto.pkrvars.hcl
+packer/scripts/ks.cfg
+**/tfplan
+inventory.ini
