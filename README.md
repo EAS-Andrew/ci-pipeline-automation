@@ -9,5 +9,7 @@ This repository contains Terraform and Ansible that will provision and configure
 
 ### Usage
 `$ git clone git@github.com:EAS-Andrew/ci-pipeline-automation.git`
+
 `$ cd ci-pipeline-automation`
+
 `$ sh ./run.sh`
