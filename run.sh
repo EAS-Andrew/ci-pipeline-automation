@@ -12,24 +12,13 @@ do
     fi
 done
 
-# read -p "vsphere_server: " vsphere_server
-# read -p "vsphere_cluster: " vsphere_cluster
-# read -p "vsphere_datacenter: " vsphere_datacenter
-# read -p "vsphere_datastore: " vsphere_datastore
-# read -p "vsphere_network: " vsphere_network
-# read -p "vsphere_user: " vsphere_user
-# read -p "vsphere_password: " vsphere_password
-
-vsphere_server="vcenter.easlab.co.uk"
-vsphere_cluster="EAS-DEV"
-vsphere_datacenter="Development"
-vsphere_datastore="VM_STORAGE"
-vsphere_resource_pool="EAS-DEV"
-vsphere_template="andrew_template"
-vsphere_folder="andrew_test"
-vsphere_network="VM Network"
-vsphere_user="andrew@easlab.co.uk"
-vsphere_password="Ba04d3cf54!"
+read -p "vsphere_server: " vsphere_server
+read -p "vsphere_cluster: " vsphere_cluster
+read -p "vsphere_datacenter: " vsphere_datacenter
+read -p "vsphere_datastore: " vsphere_datastore
+read -p "vsphere_network: " vsphere_network
+read -p "vsphere_user: " vsphere_user
+read -p "vsphere_password: " vsphere_password
 
 cat << EOF > tf/variables.tfvars
 vsphere_server          = "${vsphere_server}"
